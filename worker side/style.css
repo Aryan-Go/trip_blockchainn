@@ -1,0 +1,182 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(45deg, #f6d5f7, #fbe9d7); /* Cool Gradient from Light Pink to Cream */
+    color: #333;
+    line-height: 1.6;
+    padding-top: 0px;
+    transition: background 1s ease;
+}
+
+/* Header Section */
+header {
+    padding: 40px 0;
+    text-align: center;
+    color: #d607f6;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid #004d40;
+    background: transparent;
+    transition: all 0.3s ease;
+}
+
+/* Title in Header */
+.site-title {
+    font-size: 3.6em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.site-title:hover {
+    transform: scale(1.1);
+    color: #0d6efd; /* Add color transition effect on hover */
+}
+
+/* Navigation Bar Styling */
+nav {
+    /* background-color: rgba(175, 238, 238, 0.9); Lighter Teal with slight transparency */
+    text-align: center;
+    padding: 14px 0;
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    /* margin: 0 25px; */
+}
+
+nav ul li a {
+    color: #f405ec;
+    font-size: 1.1em;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 12px 20px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* 3D Button Styling for Nav Items */
+nav ul li a:hover {
+    background-color: #ffffff;
+    transform: scale(1.1); /* Scale effect for modern look */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+nav ul li a:active {
+    background-color: #a85de9;
+    transform: scale(0.95); /* Slight shrink effect on click */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Reduce shadow on click */
+}
+
+/* Content Section Styling */
+#content {
+    max-width: 1000px;
+    margin: 40px auto;
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8); /* Slight transparency */
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+/* Hover Effect for Content */
+#content:hover {
+    /* background: rgba(255, 255, 255, 0.95); Slightly lighter background on hover */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px); /* Subtle lifting effect */
+}
+
+/* Title in Content */
+h2 {
+    font-size: 2.4em;
+    color: #222;
+    margin-bottom: 20px;
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
+
+h2:hover {
+    color: #0fbaa6; /* Change color on hover for dynamic effect */
+}
+
+p {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.8;
+    max-width: 700px;
+    margin: 0 auto 30px;
+    transition: color 0.3s ease;
+}
+
+p:hover {
+    color: #0569f4; /* Change color on hover */
+}
+
+@media (max-width: 768px) {
+    /* Mobile responsiveness */
+    header {
+        padding: 30px 0;
+    }
+
+    .site-title {
+        font-size: 2.5em;
+    }
+
+    nav ul li {
+        margin: 0 15px;
+    }
+
+    nav ul li a {
+        font-size: 1em;
+    }
+
+    #content {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+}
+
+/* Footer Section */
+footer {
+    background-color: rgba(51, 51, 51, 0.9);
+    text-align: center;
+    padding: 20px;
+    color: white;
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+    transition: background-color 0.3s ease;
+}
+
+footer p {
+    font-size: 1em;
+}
+
+/* Hover Effect for Footer */
+footer:hover {
+    background-color: rgba(51, 51, 51, 0.95);
+    transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+/* Optional: Add a gradient or smooth fade to the footer's background */

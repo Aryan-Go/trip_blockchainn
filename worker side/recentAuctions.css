@@ -1,0 +1,277 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(45deg, #f6d5f7, #fbe9d7); /* Cool gradient from Light Blue to White */
+    color: #333;
+    line-height: 1.6;
+    padding-top: 0px;
+    transition: background 1s ease;
+}
+
+/* Header Section */
+header {
+    padding: 40px 0;
+    text-align: center;
+    color: #d607f6;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid #004d40;
+    transition: all 0.3s ease;
+}
+
+.site-title {
+    font-size: 3.6em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.site-title:hover {
+    transform: scale(1.1);
+    color: #0d6efd; /* Hover effect for color */
+}
+
+/* Navigation Bar Styling */
+nav {
+    text-align: center;
+    padding: 14px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px); /* Slight blur effect for navigation */
+    transition: all 0.3s ease;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 25px;
+}
+
+nav ul li a {
+    color: #f405ec;
+    font-size: 1.1em;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 12px 20px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* 3D Button Styling */
+nav ul li a:hover {
+    background-color: #ffffff;
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+nav ul li a:active {
+    background-color: #004d40;
+    transform: scale(0.95);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Content Section Styling */
+#content {
+    max-width: 1000px;
+    margin: 40px auto;
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.85); /* Slightly transparent background */
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px); /* Adding slight blur to make it blend */
+    transition: all 0.3s ease;
+}
+
+/* Hover Effect for Content */
+#content:hover {
+    background: rgba(255, 255, 255, 0.95); /* Slightly lighter on hover */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+/* Title in Content */
+h2 {
+    font-size: 2.4em;
+    color: #222;
+    margin-bottom: 20px;
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
+
+h2:hover {
+    color: #0fbaa6; /* Hover effect for title */
+}
+
+p {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.8;
+    max-width: 700px;
+    margin: 0 auto 30px;
+    transition: color 0.3s ease;
+}
+
+p:hover {
+    color: #0569f4; /* Hover effect for paragraph */
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 30px 0;
+    }
+
+    .site-title {
+        font-size: 2.5em;
+    }
+
+    nav ul li {
+        margin: 0 15px;
+    }
+
+    nav ul li a {
+        font-size: 1em;
+    }
+
+    #content {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+}
+
+/* Auction Section Styling */
+main {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.85); /* Slightly transparent background */
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px); /* Adding slight blur to blend */
+    transition: all 0.3s ease;
+}
+
+#auction h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #00796b;
+}
+
+/* Hover Effect for Auction Section */
+main:hover {
+    background: rgba(255, 255, 255, 0.95); /* Slightly lighter on hover */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+.auction-details {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.timer {
+    font-size: 2.5em;
+    color: #e53935;
+    font-weight: bold;
+}
+
+.min-price {
+    font-size: 1.5em;
+    color: #388e3c;
+}
+
+/* Bid Section Styling */
+.bid-section {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#bid-amount {
+    font-size: 1.2em;
+    padding: 10px;
+    width: 150px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    margin-right: 15px;
+}
+
+.button-3d {
+    background: #00796b;
+    color: white;
+    font-size: 1.2em;
+    padding: 12px 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button-3d:hover {
+    background-color: #004d40;
+    transform: scale(1.05);
+}
+
+.button-3d:active {
+    background-color: #004d40;
+    transform: scale(0.98);
+}
+
+/* Bid History Section */
+.bid-history {
+    margin-top: 40px;
+    padding: 20px;
+    background: #f0f4c3;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+/* Hover Effect for Bid History */
+.bid-history:hover {
+    background: #f4f9f4;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.bid-history h3 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #388e3c;
+}
+
+#bids-list {
+    list-style: none;
+}
+
+#bids-list li {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+#bids-list li span {
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .button-3d {
+        width: 100%;
+        padding: 15px;
+    }
+
+    #bid-amount {
+        width: 100%;
+    }
+}

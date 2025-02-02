@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mera Safar</title>
+    <script src="https://cdn.ethers.io/lib/ethers-5.2.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1 class="site-title">Mera Safar</h1>
+</header>
+
+<!-- GIF Section -->
+<div class="gif-container">
+    <img src="3f483f97004499.5ebb3291132b2.gif" alt="Travel GIF" class="gif">
+</div>
+
+<!-- Form Section -->
+<div class="container">
+    <h1>Plan Your Trip</h1>
+    
+    <form id="travelForm">
+        <label for="place">Where do you want to go?</label>
+        <input type="text" id="place" name="place" placeholder="Enter destination" required>
+
+        <label for="foodPrice">Base price for food</label>
+        <input type="number" id="foodPrice" name="foodPrice" min="1" placeholder="Base price for food" required>
+
+        <label for="travelPrice">Base price for travel</label>
+        <input type="number" id="travelPrice" name="travelPrice" min="1" placeholder="Base price for travel" required>
+
+        <label for="hotelPrice">Base price for hotel management</label>
+        <input type="number" id="hotelPrice" name="hotelPrice" min="1" placeholder="Base price for hotel management" required>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <div class="result" id="result">
+        <p id="resultMessage">Your trip is ready to be planned!</p>
+    </div>
+</div>
+
+<script src="brain.js"></script>
+</body>
+</html>

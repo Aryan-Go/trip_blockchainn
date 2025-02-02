@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trip Planner</title>
+    <link rel="stylesheet" href="answer.css">
+</head>
+<body>
+    <header>
+        <h1 class="site-title">Mera Safar</h1>
+    </header>
+
+    <div class="container">
+        <h2>Trip Costs From Blockchain</h2>
+
+        <!-- Loading GIF (Hidden initially) -->
+        <div id="loading" class="loading">
+            <img src="circle loading GIF.gif" alt="Loading...">
+        </div>
+
+        <!-- Result Section (This is where the fetched data will be shown) -->
+        <div id="result" class="result" style="display: none;">
+            <h3>Your Trip Costs:</h3>
+            <p>Minimum Food Price: <span id="displayFoodPrice">Loading...</span> ETH</p>
+            <p>Minimum Travel Price: <span id="displayTravelPrice">Loading...</span> ETH</p>
+            <p>Minimum Hotel Price: <span id="displayHotelPrice">Loading...</span> ETH</p>
+            <p>Total Price: <span id="totalPrice">Loading...</span> ETH</p>
+
+            <!-- Confirmation Buttons -->
+            <div id="confirmSection" style="display: none;">
+                <p>Do you want to proceed with the payment?</p>
+                <button id="confirmPaymentBtn" style="background-color: #4CAF50;">Yes, Pay Now</button>
+                <button id="cancelPaymentBtn" style="background-color: #f44336;">Cancel</button>
+            </div>
+        </div>
+
+        <!-- Thank You Message -->
+        <div id="thankYou" style="display: none;">
+            <h2>Thank you for your payment!</h2>
+            <p>Your trip is booked and you will receive an email with all details soon.</p>
+        </div>
+
+        <button id="loadDataBtn">Load Trip Data</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/ethers@5.6.9/dist/ethers.umd.min.js"></script>
+    <script src="answer.js"></script>
+</body>
+</html>

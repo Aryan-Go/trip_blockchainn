@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auction - Mera Safar</title>
+    <link rel="stylesheet" href="recentAuctions.css">
+</head>
+<body>
+    <header>
+        <h1 class="site-title">Mera Safar - Live Auction</h1>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="oldAuctions.html" id="oldAuctions">Old Auctions</a></li>
+            <li><a href="index.html" id="recentAuctions">Home</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="auction">
+            <h2>Current Auction: Tourist Attraction Ticket</h2>
+
+            <!-- Auction Details -->
+            <div class="auction-details">
+                <div id="timer" class="timer" aria-live="polite">00:00</div> <!-- Timer with ARIA Live for accessibility -->
+                <div id="min-price" class="min-price">Minimum Price: $100</div>
+            </div>
+
+            <!-- Bid Section -->
+            <div class="bid-section">
+                <p>The questions is</p>
+                <input type="number" id="bid-amount" placeholder="Enter your bid" aria-label="Bid Amount">
+                <button id="place-bid" class="button-3d">Place Bid</button>
+            </div>
+
+            <!-- Error Message -->
+            <div id="error-message" class="error-message" style="display: none;"></div> <!-- Error Message Section -->
+
+            <!-- Bid History -->
+            <div id="bid-history" class="bid-history">
+                <h3>Bids Made So Far:</h3>
+                <ul id="bids-list">
+                    <!-- List of bids will be added dynamically -->
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <script src="recentAuctions.js"></script>
+</body>
+</html>

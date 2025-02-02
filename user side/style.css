@@ -1,0 +1,180 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(45deg, #f6d5f7, #fbe9d7); /* Cool Gradient from Light Pink to Cream */
+    color: #333;
+    line-height: 1.6;
+    padding-top: 0px;
+    display: flex;  /* Enables Flexbox */
+    justify-content: center;  /* Centers content horizontally */
+    align-items: center;  /* Centers content vertically */
+    min-height: 100vh;  /* Ensures the body takes at least full viewport height */
+    transition: background 1s ease;
+}
+
+/* Header Section */
+header {
+    padding: 40px 0;
+    text-align: center;
+    color: #d607f6;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid #004d40;
+    background: transparent;
+    transition: all 0.3s ease;
+}
+
+/* Title in Header */
+.site-title {
+    font-size: 3.6em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.site-title:hover {
+    transform: scale(1.1);
+    color: #0d6efd; /* Add color transition effect on hover */
+}
+
+/* GIF Section */
+.gif-container {
+    margin: 30px 0; /* Adds space above and below the GIF */
+    text-align: center; /* Centers the GIF */
+}
+
+.gif {
+    width: 100%; /* Makes the GIF responsive */
+    max-width: 400px; /* Limits the maximum size of the GIF */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Adds shadow effect */
+}
+
+/* Content Section Styling */
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;  /* Ensures the container is not too wide */
+    margin-top: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #4CAF50;
+    margin-bottom: 20px;
+    font-size: 2.4em;
+}
+
+label {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+    display: block;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Result Section Styling */
+.result {
+    display: none;
+    background-color: #e7f5e7;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 16px;
+    color: #333;
+}
+
+.result p {
+    font-size: 1.1em;
+}
+
+/* Hover Effect for Result */
+.result:hover {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px); /* Subtle lifting effect */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    /* Mobile responsiveness */
+    header {
+        padding: 30px 0;
+    }
+
+    .site-title {
+        font-size: 2.5em;
+    }
+
+    nav ul li {
+        margin: 0 15px;
+    }
+
+    nav ul li a {
+        font-size: 1em;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+}
+
+/* Footer Section (Optional) */
+footer {
+    background-color: rgba(51, 51, 51, 0.9);
+    text-align: center;
+    padding: 20px;
+    color: white;
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+    transition: background-color 0.3s ease;
+}
+
+footer p {
+    font-size: 1em;
+}
+
+footer:hover {
+    background-color: rgba(51, 51, 51, 0.95);
+    transform: scale(1.05); /* Slight scale effect on hover */
+}
